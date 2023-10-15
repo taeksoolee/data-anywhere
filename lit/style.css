@@ -1,0 +1,42 @@
+body {
+  width: 100vw;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  background-color: white;
+}
+
+#spreadsheet {
+  max-width: fit-content;
+  overflow: scroll;
+  margin-top: 80px;
+}
+
+*:focus-visible {
+  border: none;
+  outline: none;
+}
+
+*.range, *.range>textarea {
+  background-color: #efefef;
+}
+
+*.selected, *.selected>textarea {
+  outline: 1px solid red;
+  background-color: white;
+  
+}
+
+textarea {
+  resize: none;
+  font-size: 10px;
+  cursor: text;
+}
